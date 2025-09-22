@@ -12,8 +12,8 @@ jobs:
         with:
           node-version: "20"
 
-      - run: cd .. && ls
-        
+      - run: ls
+
       - name: "Installer les dependences"
         working-directory: ../
         run: npm install
