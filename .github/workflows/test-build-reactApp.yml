@@ -10,11 +10,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: "20"
 
       - name: "Installer les dependences"
+        working-directory: ../
         run: npm install
-        working-directory: ../app-reactjs
 
       - name: "Build le projet"
         run: npm run build
