@@ -12,10 +12,9 @@ jobs:
         with:
           node-version: 20
 
-      - run: pwd
-
       - name: "Installer les dependences"
         run: npm install
+        working-directory: ./app-reactjs
 
       - name: "Build le projet"
         run: npm run build
