@@ -12,6 +12,8 @@ jobs:
         with:
           node-version: 20
 
+      - run: pwd
+
       - name: "Installer les dependences"
         run: npm install
 
